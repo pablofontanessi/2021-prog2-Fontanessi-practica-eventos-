@@ -64,6 +64,9 @@ namespace Presentacion
                         string id = Console.ReadLine();
 
                         break;
+                    case 3:
+
+                        break;
                     default:
                         break;
                 }
@@ -93,6 +96,8 @@ namespace Presentacion
             {
                 Console.WriteLine($"El producto con id {args.elementos.Identificador} fue eliminado");
             }
+
+            
         }
     }
 }
