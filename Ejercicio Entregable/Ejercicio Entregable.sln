@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Ejercicio Entregable\Logica.csproj", "{44BE8B81-E76D-4EF7-BFA6-4E8FAC25C170}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{35D9BF01-24C2-4A61-BCBC-DE06B54F219E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{44BE8B81-E76D-4EF7-BFA6-4E8FAC25C170}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44BE8B81-E76D-4EF7-BFA6-4E8FAC25C170}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44BE8B81-E76D-4EF7-BFA6-4E8FAC25C170}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D9BF01-24C2-4A61-BCBC-DE06B54F219E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D9BF01-24C2-4A61-BCBC-DE06B54F219E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D9BF01-24C2-4A61-BCBC-DE06B54F219E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D9BF01-24C2-4A61-BCBC-DE06B54F219E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
