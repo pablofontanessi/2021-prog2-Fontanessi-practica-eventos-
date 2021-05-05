@@ -88,7 +88,41 @@ namespace Presentacion
                 {
                     Console.WriteLine($"La computadora fue agregada. Detalle: {args.elementos.Identificador}");
                 }
-
+                Console.ReadKey();
+                Console.Clear();
+                List<string> listadoElementos = LogicaPrincipal.Singleton.ObtenerListadoElementos();
+                foreach (var elemento in listadoElementos)
+                {
+                    if (args.elementos is Monitor monitor1)                     
+                    {
+                        if (elemento.Contains("Monitor") & elemento.Contains($"{args.elementos.Marca}") & elemento.Contains($"{args.elementos.Modelo}") & elemento.Contains($"{monitor1.Pulgadas}"))
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine(elemento);
+                            Console.ForegroundColor = ConsoleColor.Gray;
+                        }
+                        else
+                        {
+                            Console.WriteLine(elemento);
+                        }
+                    }
+                    else
+                    {
+                        if (args.elementos is Computadora computadora)
+                        {
+                            if (elemento.Contains("PC") & elemento.Contains($"{args.elementos.Marca}") & elemento.Contains($"{args.elementos.Modelo}") & elemento.Contains($"{computadora.DescProcesador}") & elemento.Contains($"{computadora.CantidadRAM}") & elemento.Contains($"{computadora.NombreFabricante}"))
+                            {
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                Console.WriteLine(elemento);
+                                Console.ForegroundColor = ConsoleColor.Gray;
+                            }
+                            else
+                            {
+                                Console.WriteLine(elemento);
+                            }
+                        }
+                    }
+                }
 
             }
 

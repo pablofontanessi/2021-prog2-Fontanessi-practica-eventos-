@@ -26,6 +26,9 @@ namespace Ejercicio_Entregable
         public int CantidadRAM { get; set; }
         public string NombreFabricante { get; set; }
 
-        
+        public override string ObtenerDescripcionElemento()
+        {
+            return "PC - " + base.ObtenerDescripcionElemento() + "-" + DescProcesador + "-" + CantidadRAM.ToString() + "-" + NombreFabricante;
+        }
     }
 }

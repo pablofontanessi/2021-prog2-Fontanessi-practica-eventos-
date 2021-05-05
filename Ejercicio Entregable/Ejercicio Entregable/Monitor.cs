@@ -31,5 +31,9 @@ namespace Ejercicio_Entregable
             Pulgadas = pulgadas;
             
         }
+        public override string ObtenerDescripcionElemento()
+        {
+            return "Monitor - " + base.ObtenerDescripcionElemento() + "-" + Pulgadas.ToString();
+        }
     }
 }

@@ -15,5 +15,9 @@ namespace Ejercicio_Entregable
         public int NroSerie { get; set; }
         public string Identificador => Modelo + Marca + NroSerie;
 
+        public virtual string ObtenerDescripcionElemento()
+        {
+            return Modelo + "-" + Marca ; 
+        }
     }
 }
